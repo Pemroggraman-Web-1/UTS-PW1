@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Azzar Rizky</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-light bg-light shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.webp" alt="" width="60" height="30" />
+        </a>
+      </div>
+    </nav>
+    <!--ENd Nav-->
+    <!--Content-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs col-lg-4 mt-3">
+          <h2>Formulir Testimoni</h2>
+          Nama Lengkap <br />
+          <input type="text" name="nama" id="nama" class="form-control" /> <br />
+          Email <br />
+          <input type="text" name="email" id="email" placeholder="example@gmail.com" class="form-control" /> <br />
+          Testimoni Kamu <br />
+          <textarea type="textarea" name="testimoni" id="testimoni" class="form-control"></textarea> <br />
+          <button onclick="simpan()" class="btn btn-block btn-secondary">Kirim</button>
+        </div>
+        <br />
+        <div class="col-lg-4 col-xs mt-3">
+          <div class="card shadow p-3 mb-5 bg-body rounded" id="cardOutput" style="width: 18rem">
+            <div class="card-body" id="">
+              <!--<h3 class="card-title" id="namaCARD"></h3>
+              <p class="card-text" id="emailCARD"></p>
+              <p class="card-text" id="testimoniKamuCARD"></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
